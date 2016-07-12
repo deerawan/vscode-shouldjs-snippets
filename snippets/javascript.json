@@ -1,45 +1,75 @@
 {
-  "containDeep": {
+  "Bool#false": {
+    "prefix": "shfalse",
+    "body": "$1.should.be.false();",
+    "description": "Should.js Assertion#false. Assert given object is exactly false."
+  },
+  "Bool#falseNot": {
+    "prefix": "shnotfalse",
+    "body": "$1.should.not.be.false();",
+    "description": "Should.js Assertion#false (NOT)."
+  },
+  "Bool#ok": {
+    "prefix": "shok",
+    "body": "$1.should.be.ok();",
+    "description": "Should.js Assertion#ok. Assert given object is thuthy according javascript type conversions."
+  },
+  "Bool#okNot": {
+    "prefix": "shnotok",
+    "body": "$1.should.not.be.ok();",
+    "description": "Should.js Assertion#ok (NOT)."
+  },
+  "Bool#true": {
+    "prefix": "shtrue",
+    "body": "$1.should.be.true();",
+    "description": "Should.js Assertion#true. Assert given object is exactly true."
+  },
+  "Bool#trueNot": {
+    "prefix": "shnottrue",
+    "body": "$1.should.not.be.true();",
+    "description": "Should.js Assertion#true (NOT)."
+  },
+  "Contain#containDeep": {
     "prefix": "shcd",
     "body": "$1.should.containDeep($2);",
     "description": "Should.js Assertion#containDeep. Deep object equality comparison."
   },
-  "containDeepOrdered": {
+  "Contain#containDeepOrdered": {
     "prefix": "shcdo",
     "body": "$1.should.containDeepOrdered($2);",
     "description": "Should.js Assertion#containDeepOrdered. Assert that given object is contain equally structured object on the same depth level."
   },
-  "containEql": {
+  "Contain#containEql": {
     "prefix": "shceql",
     "body": "$1.should.containEql($2);",
     "description": "Should.js Assertion#containEql. Assert that given object contain something that equal to other."
   },
-  "eql": {
+  "Equality#eql": {
     "prefix": "sheql",
     "body": "$1.should.be.eql($2);",
     "description": "Should.js Assertion#eql. Deep object equality comparison."
   },
-  "eqlNot": {
+  "Equality#eqlNot": {
     "prefix": "shnoteql",
     "body": "$1.should.not.be.eql($2);",
     "description": "Should.js Assertion#eql (NOT). Deep object equality comparison."
   },
-  "equal": {
+  "Equality#equal": {
     "prefix": "shequal",
     "body": "$1.should.be.equal($2);",
     "description": "Should.js Assertion#equal. Exact comparison using ===."
   },
-  "eqlOneOf": {
+  "Equality#oneOf": {
     "prefix": "shone",
     "body": "$1.should.be.oneOf($2)",
     "description": "Should.js Assertion#oneOf. Exact comparison using .eql to be one of supplied objects."
   },
-  "equallOneOf": {
+  "Equality#equalOneOf": {
     "prefix": "shequalone",
     "body": "$1.should.be.equalOneOf($2)",
     "description": "Should.js Assertion#equalOneOf. Exact comparison using === to be one of supplied objects."
   },
-  "exactly": {
+  "Equality#exactly": {
     "prefix": "shex",
     "body": "$1.should.be.exactly($2);",
     "description": "Should.js Assertion#exactly. Aliases Assertion#equal."
