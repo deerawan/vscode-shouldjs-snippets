@@ -2,31 +2,46 @@
   "containDeep": {
     "prefix": "shcd",
     "body": "$1.should.containDeep($2);",
-    "description": "Deep object equality comparison"
+    "description": "Should.js Assertion#containDeep. Deep object equality comparison."
+  },
+  "containDeepOrdered": {
+    "prefix": "shcdo",
+    "body": "$1.should.containDeepOrdered($2);",
+    "description": "Should.js Assertion#containDeepOrdered. Assert that given object is contain equally structured object on the same depth level."
+  },
+  "containEql": {
+    "prefix": "shceql",
+    "body": "$1.should.containEql($2);",
+    "description": "Should.js Assertion#containEql. Assert that given object contain something that equal to other."
   },
   "eql": {
     "prefix": "sheql",
-    "body": "should($1).be.eql($2);",
-    "description": "Deep object equality comparison"
+    "body": "$1.should.be.eql($2);",
+    "description": "Should.js Assertion#eql. Deep object equality comparison."
   },
   "eqlNot": {
     "prefix": "shnoteql",
-    "body": "should($1).not.be.eql($2);",
-    "description": "Deep object equality comparison (NOT)"
+    "body": "$1.should.not.be.eql($2);",
+    "description": "Should.js Assertion#eql (NOT). Deep object equality comparison."
   },
   "equal": {
-    "prefix": "sheq",
-    "body": "should($1).be.equal($2);",
-    "description": "Exact comparison using ==="
+    "prefix": "shequal",
+    "body": "$1.should.be.equal($2);",
+    "description": "Should.js Assertion#equal. Exact comparison using ===."
   },
-  "equalOneOf": {
+  "eqlOneOf": {
     "prefix": "shone",
-    "body": "should($1).be.oneOf($2)",
-    "description": "Exact comparison using .eql to be one of supplied objects."
+    "body": "$1.should.be.oneOf($2)",
+    "description": "Should.js Assertion#oneOf. Exact comparison using .eql to be one of supplied objects."
+  },
+  "equallOneOf": {
+    "prefix": "shequalone",
+    "body": "$1.should.be.equalOneOf($2)",
+    "description": "Should.js Assertion#equalOneOf. Exact comparison using === to be one of supplied objects."
   },
   "exactly": {
     "prefix": "shex",
-    "body": "should($1).be.exactly($2);",
-    "description": "Aliases Assertion#equal"
+    "body": "$1.should.be.exactly($2);",
+    "description": "Should.js Assertion#exactly. Aliases Assertion#equal."
   }
 }
