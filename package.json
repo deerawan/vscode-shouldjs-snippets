@@ -1,0 +1,24 @@
+{
+  "name": "vscode-shouldjs-snippets",
+  "publisher": "deerawan",
+  "version": "1.0.0",
+  "displayName": "Should.js Snippets",
+  "description": "Should.js Snippets for Javascript and Typescript",
+  "license": "See License in LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deerawan/vscode-shouldjs-snippets"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": ["Snippets"],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      }
+    ]
+  }
+}
