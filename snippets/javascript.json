@@ -153,5 +153,35 @@
     "prefix": "shrejectwith",
     "body": "${1:target}.should.be.rejectedWith();",
     "description": "Should.js Assertion#rejectedWith. Assert given promise will be rejected with some sort of error."
+  },
+  "Property#empty": {
+    "prefix": "shemp",
+    "body": "${1:target}.should.be.empty();",
+    "description": "Should.js Assertion#empty. Asserts given object is empty. For strings, arrays and arguments it checks .length property, for objects it checks keys."
+  },
+  "Property#enumerable": {
+    "prefix": "shenum",
+    "body": "${1:target}.should.have.enumerable(${2:name}, ${3:value});",
+    "description": "Should.js Assertion#enumerable. Asserts given object has enumerable property with optionally value."
+  },
+  "Property#enumerables": {
+    "prefix": "shenums",
+    "body": "${1:target}.should.have.enumerables(${2:names});",
+    "description": "Should.js Assertion#enumerables. Asserts given object has enumerable properties."
+  },
+  "Property#keys": {
+    "prefix": "shkeys",
+    "body": "${1:target}.should.have.keys(${2:keys});",
+    "description": "Should.js Assertion#keys. Asserts given object has exact keys. Compared to properties, keys does not accept Object as a argument."
+  },
+  "Property#length": {
+    "prefix": "shlen",
+    "body": "${1:target}.should.have.length(${2:value});",
+    "description": "Should.js Assertion#length. Asserts given object has property length with given value n."
+  },
+  "Property#ownProperty": {
+    "prefix": "shownprop",
+    "body": "${1:target}.should.have.ownProperty(${2:name});",
+    "description": "Should.js Assertion#length. Asserts given object has own property."
   }
 }
