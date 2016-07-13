@@ -73,5 +73,55 @@
     "prefix": "shex",
     "body": "$1.should.be.exactly($2);",
     "description": "Should.js Assertion#exactly. Aliases Assertion#equal."
+  },
+  "Number#Infinity": {
+    "prefix": "shinf",
+    "body": "$1.should.be.Infinity($2);",
+    "description": "Should.js Assertion#Infinity. Assert given object is not finite (positive or negative)."
+  },
+  "Number#InfinityNot": {
+    "prefix": "shnotinf",
+    "body": "$1.should.not.be.Infinity($2);",
+    "description": "Should.js Assertion#Infinity (NOT)."
+  },
+  "Number#NaN": {
+    "prefix": "shnan",
+    "body": "$1.should.be.NaN($2);",
+    "description": "Should.js Assertion#NaN. Assert given object is NaN."
+  },
+  "Number#NaNNot": {
+    "prefix": "shnotnan",
+    "body": "$1.should.not.be.NaN($2);",
+    "description": "Should.js Assertion#NaN (NOT)."
+  },
+  "Number#above": {
+    "prefix": "shabv",
+    "body": "$1.should.be.above($2);",
+    "description": "Should.js Assertion#above. Assert given number above n."
+  },
+  "Number#aboveOrEqual": {
+    "prefix": "shabveql",
+    "body": "$1.should.be.aboveOrEqual($2);",
+    "description": "Should.js Assertion#aboveOrEqual. Assert given number above n."
+  },
+  "Number#approximately": {
+    "prefix": "shapprox",
+    "body": "$1.should.be.approximately($2, $3);",
+    "description": "Should.js Assertion#approximately. Assert given number near some other value within delta."
+  },
+  "Number#below": {
+    "prefix": "shblw",
+    "body": "$1.should.be.below($2);",
+    "description": "Should.js Assertion#below. Assert given number below n."
+  },
+  "Number#belowOrEqual": {
+    "prefix": "shblweql",
+    "body": "$1.should.be.belowOrEqual($2);",
+    "description": "Should.js Assertion#belowOrEqual. Assert given number below n."
+  },
+  "Number#within": {
+    "prefix": "shwith",
+    "body": "$1.should.be.within($2, $3);",
+    "description": "Should.js Assertion#within. Assert given number between start and finish or equal one of them."
   }
 }
