@@ -123,5 +123,35 @@
     "prefix": "shwith",
     "body": "$1.should.be.within($2, $3);",
     "description": "Should.js Assertion#within. Assert given number between start and finish or equal one of them."
+  },
+  "Promise#Promise": {
+    "prefix": "shprom",
+    "body": "$1.should.be.Promise();",
+    "description": "Should.js Assertion#Promise. Assert given object is a Promise."
+  },
+  "Promise#finally": {
+    "prefix": "shfinal",
+    "body": "$1.should.be.finally.${2:matcher};",
+    "description": "Should.js Assertion#finally. Assert given object is promise and wrap it in PromisedAssertion, which has all properties of Assertion."
+  },
+  "Promise#fulfilled": {
+    "prefix": "shfulfill",
+    "body": "${1:target}.should.be.fulfilled();",
+    "description": "Should.js Assertion#fulfilled. Assert given promise will be fulfilled."
+  },
+  "Promise#fulfilledWith": {
+    "prefix": "shfulfillwith",
+    "body": "${1:target}.should.be.fulfilledWith(${2:value});",
+    "description": "Should.js Assertion#fulfilledWith. Assert given promise will be fulfilled with some expected value (value compared using .eql)."
+  },
+  "Promise#rejected": {
+    "prefix": "shreject",
+    "body": "${1:target}.should.be.rejected();",
+    "description": "Should.js Assertion#rejected. Assert given promise will be rejected."
+  },
+  "Promise#rejectedWith": {
+    "prefix": "shrejectwith",
+    "body": "${1:target}.should.be.rejectedWith();",
+    "description": "Should.js Assertion#rejectedWith. Assert given promise will be rejected with some sort of error."
   }
 }
